@@ -15,15 +15,15 @@ import java.util.Date;
 public class Demo2 {
     public static void main(String[] args) {
         // Get current date and time
-//        Date date1 = new Date();
-//        System.out.println("Current date/time old api: " + date1 + "\n\n");
-//        LocalDateTime date = LocalDateTime.now();
-//        System.out.println("Current date/time with built-in LocalDateTime class format: " + date);
+        Date date1 = new Date();
+        System.out.println("Current date/time old api: " + date1 + "\n\n");
+        LocalDateTime date = LocalDateTime.now();
+        System.out.println("Current date/time with built-in LocalDateTime class format: " + date);
 //        
 //        // Now use new DateTimeFormatter class
-//        DateTimeFormatter format = DateTimeFormatter.ofPattern("MMM d yyyy  hh:mm a");
-//        String strDate = date.format(format);
-//        System.out.println("Current date/time with custom format provided by DateTimeFormatter: " + strDate);
+        DateTimeFormatter format = DateTimeFormatter.ofPattern("MMM d yyyy  hh:mm a");
+        String strDate = date.format(format);
+        System.out.println("Current date/time with custom format provided by DateTimeFormatter: " + strDate);
 //
 //        // Just get Dates without time values and calculate payday
 //        format = DateTimeFormatter.ofPattern("MMM d yyyy");
@@ -42,8 +42,8 @@ public class Demo2 {
 ////         // Solution #1
 //        LocalDateTime endDate = startDate.with(TemporalAdjusters.next(DayOfWeek.SATURDAY));
 //        System.out.println(startDate.until(endDate, ChronoUnit.HOURS));
-
-          LocalDateTime today = LocalDateTime.now();
+//
+//          LocalDateTime today = LocalDateTime.now();
           
 //         boolean trueOrFalse = false;
 //          while(trueOrFalse == false){
